@@ -4,6 +4,8 @@ resume: 019e3c5e-558c-7690-8230-56ed17830a35
 agent: codex
 agent_doc_format: template
 agent_doc_write: crdt
+links:
+- https://www.kitchensanctuary.com/how-to-cook-the-perfect-steak/
 ---
 
 # Session: My cook
@@ -42,7 +44,15 @@ I created the text file: [beef_steak_materials.txt](/home/lucas/agent-doc/beef_s
 
 It contains the required materials for cooking beef steak, plus optional flavor additions.
 I’ll add a small text file in the workspace with the steak ingredient list, then respond with the file path in the document patch.
-<!-- agent:boundary:621d4c22 -->
+#User
+Okay, I think you need to update txt file according to reference link that I added.
+### Re: Updated Steak Materials File — gpt-5.5
+
+I updated [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.txt) using the Kitchen Sanctuary reference link.
+
+The file now includes the recipe-style quantities for 2 servings: sirloin steaks, sunflower oil, salt, black pepper, butter, garlic, and fresh thyme, plus substitutions like ribeye or rosemary.
+I checked the reference recipe and I’m updating the text file to match its ingredient quantities and optional aromatics more closely.
+<!-- agent:boundary:e8575903 -->
 <!-- /agent:exchange -->
 
 ## Queue

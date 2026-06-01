@@ -1,0 +1,22 @@
+[guards]
+
+[components.exchange]
+patch = "append"
+merge_strategy = ""
+timestamp = false
+max_entries = 0
+max_lines = 0
+
+[components.findings]
+patch = "append"
+merge_strategy = ""
+timestamp = false
+max_entries = 0
+max_lines = 0
+
+[components.status]
+patch = "replace"
+merge_strategy = ""
+timestamp = false
+max_entries = 0
+max_lines = 0

@@ -1,0 +1,18 @@
+{
+  "capture_id": "cycle-1779130078512",
+  "cycle_id": "cycle-1779130078512",
+  "file": "/home/lucas/agent-doc/session.md",
+  "session_id": "a51e4404-1dba-40ec-bac5-d3452a5c6249",
+  "agent": "codex",
+  "document_format": "template",
+  "write_strategy": "crdt",
+  "captured_at": 1780331357,
+  "updated_at": 1780331357,
+  "write_applied_at": 1780331357,
+  "committed_at": 1780331357,
+  "snapshot_hash": "df78798146af15604ddeda3fbb149f504997edecb594ce951aa640878004220f",
+  "file_hash": "f91f1f95065ba144c652a33098b39eb3ab0c24b02476d214fb5f6ec846d34e4c",
+  "response_sha256": "1cf070f79c31d8c66bbb91b44e58a91843c3e236f063459ec1a109f13248b38e",
+  "response_body": "I’ll remove the files I created for this session, including the generated Python cache from the syntax check if it exists.\n<!-- patch:exchange -->\n### Re: Removed Created Files — gpt-5.5\n\nI removed the files I created above:\n\n- `beef_steak_materials.txt`\n- `send_materials_to_openai.py`\n\nI also removed the generated Python cache file from the syntax check. I verified those files are no longer present.\n<!-- /patch:exchange -->",
+  "state": "committed"
+}

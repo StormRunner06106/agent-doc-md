@@ -1,0 +1,18 @@
+{
+  "capture_id": "cycle-1779112213697",
+  "cycle_id": "cycle-1779112213697",
+  "file": "/home/lucas/agent-doc/session.md",
+  "session_id": "a51e4404-1dba-40ec-bac5-d3452a5c6249",
+  "agent": "codex",
+  "document_format": "template",
+  "write_strategy": "crdt",
+  "captured_at": 1779129373,
+  "updated_at": 1779130078,
+  "write_applied_at": 1779129373,
+  "committed_at": 1779129373,
+  "snapshot_hash": "d51ee943cd76a1074ca3810828fcda8bcda9ca9b1ff1902888889af93062abde",
+  "file_hash": "d51ee943cd76a1074ca3810828fcda8bcda9ca9b1ff1902888889af93062abde",
+  "response_sha256": "e68a6c41594adae9b921e205bbbcf7d5c1266bc849273b9ee2f55fb4059fbe09",
+  "response_body": "<!-- patch:exchange -->\n### Re: Document State — gpt-5.5\n\nNo new cooking question was added in this edit. I’m treating the `(HEAD)` marker as a document boundary update, not as a new user request.\n<!-- /patch:exchange -->",
+  "state": "committed"
+}

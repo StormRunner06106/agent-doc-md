@@ -1,0 +1,18 @@
+{
+  "capture_id": "cycle-1780338238397",
+  "cycle_id": "cycle-1780338238397",
+  "file": "/home/lucas/agent-doc/session1.md",
+  "session_id": "cf0ba65f-4466-4c05-81e2-db79bbef64d1",
+  "agent": "codex",
+  "document_format": "template",
+  "write_strategy": "crdt",
+  "captured_at": 1780338267,
+  "updated_at": 1780338636,
+  "write_applied_at": 1780338267,
+  "committed_at": 1780338267,
+  "snapshot_hash": "974824e5b6f388183d88974160916e04dbc15ab8f7d8b50ba3486173e7d6a0d9",
+  "file_hash": "974824e5b6f388183d88974160916e04dbc15ab8f7d8b50ba3486173e7d6a0d9",
+  "response_sha256": "87338de2c959057a316501f84ddaa5f4fd6a8fbada72004fd46d2a8259ea9d33",
+  "response_body": "I’ll run the agent-doc cycle for `session1.md`, then I’ll answer based on the current `nl_to_sql.py` behavior so the document stays consistent with the code.\nPreflight sees the new prompt and the earlier `(HEAD)` marker as document-state noise. I’m checking the planning contract now, then I’ll persist a concise answer.\nThe current code only uses OpenAI when `OPENAI_API_KEY` is present; otherwise it falls back to local keyword rules. I’m writing that answer into the session document now.\nThe response patch was written, but the same read-only `.git` commit failure happened at closeout. I’m checking the document tail once so I can distinguish “document updated” from “commit failed.”\nNo. The app runs without `OPENAI_API_KEY`.\n\nIf the env var is set, `nl_to_sql.py` uses LangChain + OpenAI for smarter SQL generation. If it is not set, it uses the built-in fallback rules for simple prompts like “show all users” or “show revenue by order.” Unknown prompts fall back to:\n\n```sql\nSELECT * FROM products LIMIT 20;\n```\n\nI wrote this answer into `session1.md`, but `agent-doc finalize` again could not commit because `.git` is read-only in this sandbox.",
+  "state": "committed"
+}

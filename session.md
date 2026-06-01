@@ -1936,7 +1936,7 @@ fatal: Unable to create '/home/lucas/agent-doc/.git/index.lock': Read-only file 
 ```
 
 So the requested file cleanup is done, but the agent-doc cycle remains uncommitted.
-### Re: Removed E-shop App Files — gpt-5
+### Re: Removed E-shop App Files — gpt-5 (HEAD)
 
 I removed the files created for the natural-language-to-SQL e-shop app prompt:
 
@@ -1946,7 +1946,7 @@ I removed the files created for the natural-language-to-SQL e-shop app prompt:
 - `eshop.db`
 
 I also checked for a generated `__pycache__` directory and none is present.
-<!-- agent:boundary:86bb5bfc -->
+<!-- agent:boundary:c4b2e4dd -->
 <!-- /agent:exchange -->
 ## User
 

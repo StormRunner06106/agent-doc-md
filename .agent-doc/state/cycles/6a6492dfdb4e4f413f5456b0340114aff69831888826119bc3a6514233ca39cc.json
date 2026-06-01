@@ -1,0 +1,13 @@
+{
+  "cycle_id": "cycle-1780338636731",
+  "file": "/home/lucas/agent-doc/session1.md",
+  "phase": "committed",
+  "last_event": "commit_already_current",
+  "started_at": 1780338636,
+  "updated_at": 1780339780,
+  "snapshot_hash": "bf231ce59eed5892d157e481da7c20163c05dd11198b2f9d4e6cf36d07ea4ea0",
+  "file_hash": "bf231ce59eed5892d157e481da7c20163c05dd11198b2f9d4e6cf36d07ea4ea0",
+  "capture_id": "cycle-1780338636731",
+  "response_sha256": "801f71d5467bc07c63d1a0b999d011ece0bc1040d1034575040063b3c5a2725c",
+  "had_pending_mutations": false
+}

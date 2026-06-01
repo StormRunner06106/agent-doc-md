@@ -1,0 +1,11 @@
+{
+  "data": {
+    "capture_id": "synthetic-1780336959895",
+    "response_sha256": "d10850ebddec0c43ee2ced61d18f30e2ddf82c43d519b0f19d82844eae1fde68"
+  },
+  "event": "post_commit",
+  "event_id": "6a1dcaab36a60907",
+  "file": "session1.md",
+  "session_id": "cf0ba65f-4466-4c05-81e2-db79bbef64d1",
+  "timestamp": 1780337323
+}

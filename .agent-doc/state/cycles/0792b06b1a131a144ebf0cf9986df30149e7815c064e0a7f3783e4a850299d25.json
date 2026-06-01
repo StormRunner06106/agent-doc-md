@@ -4,10 +4,10 @@
   "phase": "committed",
   "last_event": "commit_success",
   "started_at": 1779130078,
-  "updated_at": 1780331357,
-  "snapshot_hash": "f442efc1b1437679c467cdef4514b8cc7afdd687da080758b8741571a96c2b59",
-  "file_hash": "55c1d0215a11fcd440147f246f7892ba3a96d5f75ea7182ffeea5cbccdb46e3b",
+  "updated_at": 1780336856,
+  "snapshot_hash": "17f206d7d3c6974510074f50e142858a2ca85f8a167048fe409c736f2024cc3c",
+  "file_hash": "83a2e4440d255e26d4d75b5addb49c3480dce30e7c559e7b31c335f7070e0e91",
   "capture_id": "cycle-1779130078512",
-  "response_sha256": "1cf070f79c31d8c66bbb91b44e58a91843c3e236f063459ec1a109f13248b38e",
+  "response_sha256": "871811cd0d66605f4170b3516c8e1277f71ca071d2f18f9057607030965faab6",
   "had_pending_mutations": false
 }

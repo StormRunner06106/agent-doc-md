@@ -1,0 +1,18 @@
+{
+  "capture_id": "cycle-1780338636731",
+  "cycle_id": "cycle-1780338636731",
+  "file": "/home/lucas/agent-doc/session1.md",
+  "session_id": "cf0ba65f-4466-4c05-81e2-db79bbef64d1",
+  "agent": "codex",
+  "document_format": "template",
+  "write_strategy": "crdt",
+  "captured_at": 1780338683,
+  "updated_at": 1780339780,
+  "write_applied_at": 1780338683,
+  "committed_at": 1780338683,
+  "snapshot_hash": "c450ecf9d1fb73e1719a1b627b64bbf9ad4e992f08357723c3c2d48e2409ec17",
+  "file_hash": "c450ecf9d1fb73e1719a1b627b64bbf9ad4e992f08357723c3c2d48e2409ec17",
+  "response_sha256": "801f71d5467bc07c63d1a0b999d011ece0bc1040d1034575040063b3c5a2725c",
+  "response_body": "I’ll use the OpenAI docs skill for the billing/API-key part, then run the normal `agent-doc` preflight/plan/finalize cycle for `session1.md`.\nThe OpenAI docs MCP tool is not available in this session, so I’ll fall back to official OpenAI web sources only for the billing distinction. In parallel I’m running the document preflight.\nOfficial OpenAI help confirms ChatGPT/Codex subscriptions and API billing are separate. I’m going to write that answer with links to the relevant OpenAI billing docs.\nThe document patch was applied, but the commit step hit the same read-only `.git` failure. I’m verifying the answer is present in the document before closing.\nYes. API usage is billed separately from your Codex/ChatGPT Pro subscription.\n\nYour Pro plan covers the ChatGPT/Codex product, but API keys and API usage belong to the OpenAI API platform billing system. You may need to add payment details or buy prepaid API credits before API calls work. Creating the key itself is not the main cost; making API requests is what consumes paid usage.\n\nSources: [OpenAI subscription to API billing](https://help.openai.com/en/articles/8156019-how-can-i-move-my-chatgpt-subscription-to-the-api), [OpenAI billing settings](https://help.openai.com/en/articles/9039756-managing-your-work-in-the-api-platform-with-projects), [prepaid billing](https://help.openai.com/en/articles/8264778).\n\nI wrote this into `session1.md`; `agent-doc finalize` still cannot commit because `.git` is read-only in this sandbox.",
+  "state": "committed"
+}

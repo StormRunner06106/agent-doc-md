@@ -4,8 +4,6 @@ resume: 019e3c5e-558c-7690-8230-56ed17830a35
 agent: codex
 agent_doc_format: template
 agent_doc_write: crdt
-links:
-- https://www.kitchensanctuary.com/how-to-cook-the-perfect-steak/
 ---
 
 # Session: My cook
@@ -37,22 +35,14 @@ A good combination is: salt, black pepper, garlic, butter, and rosemary. Sear th
 
 If you want a stronger flavor, you can also add soy sauce, Worcestershire sauce, mustard, or a little lemon juice in a marinade, but do not overpower the beef.
 #User
-So please make a txt file that contains required material list to cook that.
+Please make txt file contains material list for cooking above.
 ### Re: Steak Materials File — gpt-5.5
 
-I created the text file: [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.txt)
+I updated [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.txt) to match the material list from the cooking advice above.
 
-It contains the required materials for cooking beef steak, plus optional flavor additions.
-I’ll add a small text file in the workspace with the steak ingredient list, then respond with the file path in the document patch.
-#User
-Okay, I think you need to update txt file according to reference link that I added.
-### Re: Updated Steak Materials File — gpt-5.5
-
-I updated [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.txt) using the Kitchen Sanctuary reference link.
-
-The file now includes the recipe-style quantities for 2 servings: sirloin steaks, sunflower oil, salt, black pepper, butter, garlic, and fresh thyme, plus substitutions like ribeye or rosemary.
-I checked the reference recipe and I’m updating the text file to match its ingredient quantities and optional aromatics more closely.
-<!-- agent:boundary:e8575903 -->
+It now includes the main materials for beef steak and optional flavor additions.
+I’ll align the existing materials text file back to the ingredient list from the current document, since the reference link was removed.
+<!-- agent:boundary:68be36c9 -->
 <!-- /agent:exchange -->
 
 ## Queue

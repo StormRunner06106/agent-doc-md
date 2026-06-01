@@ -179,5 +179,34 @@ If you want smarter SQL generation for arbitrary questions, set the env var befo
 export OPENAI_API_KEY="your_api_key_here"
 streamlit run app.py
 ```
-<!-- agent:boundary:95aed7ab -->
+
+## User
+
+I’ll use the OpenAI docs skill for the billing/API-key part, then run the normal `agent-doc` preflight/plan/finalize cycle for `session1.md`.
+The OpenAI docs MCP tool is not available in this session, so I’ll fall back to official OpenAI web sources only for the billing distinction. In parallel I’m running the document preflight.
+Official OpenAI help confirms ChatGPT/Codex subscriptions and API billing are separate. I’m going to write that answer with links to the relevant OpenAI billing docs.
+The document patch was applied, but the commit step hit the same read-only `.git` failure. I’m verifying the answer is present in the document before closing.
+Yes. API usage is billed separately from your Codex/ChatGPT Pro subscription.
+
+Your Pro plan covers the ChatGPT/Codex product, but API keys and API usage belong to the OpenAI API platform billing system. You may need to add payment details or buy prepaid API credits before API calls work. Creating the key itself is not the main cost; making API requests is what consumes paid usage.
+
+Sources: [OpenAI subscription to API billing](https://help.openai.com/en/articles/8156019-how-can-i-move-my-chatgpt-subscription-to-the-api), [OpenAI billing settings](https://help.openai.com/en/articles/9039756-managing-your-work-in-the-api-platform-with-projects), [prepaid billing](https://help.openai.com/en/articles/8264778).
+
+I wrote this into `session1.md`; `agent-doc finalize` still cannot commit because `.git` is read-only in this sandbox.
+❯ I already purcahsed codex pro version, and want to get an openai api key, so do I have to pay again for api key?
+### Re: Codex Pro vs API billing — gpt-5
+
+Yes, API usage is billed separately from your Codex/ChatGPT Pro subscription.
+
+Your Pro subscription gives you access to Pro features in the ChatGPT/Codex product, but it does not automatically include free OpenAI API usage. OpenAI’s help docs say the API service is billed and managed separately from ChatGPT, and API usage is charged by tokens used: [OpenAI Help: ChatGPT subscription to API](https://help.openai.com/en/articles/8156019-how-can-i-move-my-chatgpt-subscription-to-the-api). OpenAI also documents that ChatGPT and the API platform have separate billing systems: [OpenAI Help: Billing settings](https://help.openai.com/en/articles/9039756-managing-your-work-in-the-api-platform-with-projects).
+
+So practically:
+
+- Creating an API key is for the API platform, not your Pro subscription.
+- You may need to add a payment method or buy prepaid API credits before API calls work.
+- You are charged for API usage separately from your Pro monthly subscription.
+- If you do not add API billing/credits, your Streamlit app can still run with the local fallback SQL rules, but OpenAI-powered SQL generation will not work.
+
+OpenAI’s prepaid billing page says new API accounts use prepaid billing, where purchased credits are deducted as you use the API: [OpenAI Help: Prepaid billing](https://help.openai.com/en/articles/8264778).
+<!-- agent:boundary:df8755c5 -->
 <!-- /agent:exchange -->

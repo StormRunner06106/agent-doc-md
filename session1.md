@@ -131,5 +131,53 @@ Verification completed:
 python -m py_compile app.py db.py nl_to_sql.py show_db.py
 python show_db.py --limit 2
 ```
-<!-- agent:boundary:531836b3 -->
+
+## User
+
+I’ll run the agent-doc cycle for `session1.md`, then I’ll answer based on the current `nl_to_sql.py` behavior so the document stays consistent with the code.
+Preflight sees the new prompt and the earlier `(HEAD)` marker as document-state noise. I’m checking the planning contract now, then I’ll persist a concise answer.
+The current code only uses OpenAI when `OPENAI_API_KEY` is present; otherwise it falls back to local keyword rules. I’m writing that answer into the session document now.
+The response patch was written, but the same read-only `.git` commit failure happened at closeout. I’m checking the document tail once so I can distinguish “document updated” from “commit failed.”
+No. The app runs without `OPENAI_API_KEY`.
+
+If the env var is set, `nl_to_sql.py` uses LangChain + OpenAI for smarter SQL generation. If it is not set, it uses the built-in fallback rules for simple prompts like “show all users” or “show revenue by order.” Unknown prompts fall back to:
+
+```sql
+SELECT * FROM products LIMIT 20;
+```
+
+I wrote this answer into `session1.md`, but `agent-doc finalize` again could not commit because `.git` is read-only in this sandbox.
+❯ Do I have to set openai api key to env? If not, what will happen?
+### Re: OpenAI API key behavior — gpt-5
+
+No, you do not have to set `OPENAI_API_KEY` for this app to run.
+
+In the current code, `nl_to_sql.py` checks for `OPENAI_API_KEY`:
+
+- If it is set, the app uses LangChain + OpenAI to generate SQL from your natural-language prompt.
+- If it is not set, `langchain_sql()` returns `None`, and the app uses the built-in `fallback_sql()` rules instead.
+
+So without an API key, the app still works, but it only understands the simple example-style prompts we hardcoded, such as:
+
+```text
+show all users
+show all products
+show top products by quantity sold
+show revenue by order
+show customers by city
+```
+
+For unknown prompts, it falls back to this default query:
+
+```sql
+SELECT * FROM products LIMIT 20;
+```
+
+If you want smarter SQL generation for arbitrary questions, set the env var before running Streamlit:
+
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+streamlit run app.py
+```
+<!-- agent:boundary:95aed7ab -->
 <!-- /agent:exchange -->

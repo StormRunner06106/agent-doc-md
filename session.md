@@ -42,8 +42,35 @@ I updated [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.
 
 It now includes the main materials for beef steak and optional flavor additions.
 I’ll align the existing materials text file back to the ingredient list from the current document, since the reference link was removed.
-<!-- agent:boundary:68be36c9 -->
+### Re: OpenAI Materials Script — gpt-5.5
+
+I created [send_materials_to_openai.py](/home/lucas/agent-doc/send_materials_to_openai.py).
+
+It reads [beef_steak_materials.txt](/home/lucas/agent-doc/beef_steak_materials.txt), sends the materials to OpenAI with a cooking prompt, and prints the response.
+
+Run it like this:
+
+```bash
+pip install openai
+export OPENAI_API_KEY="your_api_key"
+python3 send_materials_to_openai.py
+```
+
+I also checked the script syntax with:
+
+```bash
+python3 -m py_compile send_materials_to_openai.py
+```
+
+It uses OpenAI’s Responses API style from the official docs: https://platform.openai.com/docs/api-reference/responses and model guidance from https://platform.openai.com/docs/models.
+I’ll use the OpenAI docs skill for the API shape, then add a small Python script that reads the materials file and sends it with a cooking prompt.
+I found the current OpenAI Python pattern uses the Responses API via `client.responses.create(...)`. I’m adding the script with environment-based API key/model handling so the key is not stored in the repo.
+The script is in place. I’ll do a syntax check next; I won’t run the API call because that would require a configured `OPENAI_API_KEY` and network access.
+<!-- agent:boundary:5b026faf -->
 <!-- /agent:exchange -->
+## User
+
+Make a python script that reads materials txt and sent it to openai with some prompts.
 
 ## Queue
 
